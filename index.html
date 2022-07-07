@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body id="bd">
+    <div class="container">
+        <div class="card" id="card">
+            <div class="card__header">
+                <ul class="list">
+                    <li class="list__item active" id="timer_one" data-key="t1">Pomodoro</li>
+                    <li class="list__item" id="timer_two" data-key="t2">Short Break</li>
+                    <li class="list__item" id="timer_three" data-key="t3">Long Break</li>
+                </ul>
+            </div>
+            <div class="card__body">
+                <p class="show_timer" id="timer"> 25:00 </p>
+                <div class="btn-section">
+                    <button class="btn btn-start" id="start-btn"> <i class="fa-solid fa-circle-play"></i> </button>
+                    <button class="btn btn-stop" id="stop-btn"><i class="fa-solid fa-circle-pause"></i></button>
+                    <button class="btn btn-reset" id="reset-btn"><i class="fa-solid fa-arrow-rotate-left"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
